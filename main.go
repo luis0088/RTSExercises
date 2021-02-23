@@ -11,7 +11,7 @@ func AboveBelow(nums []int, target int) {
 	for _, value := range nums {
 		if  value > target {
 			above++
-		}else{
+		}else if value < target{
 			below++
 		}
 	}
@@ -52,7 +52,7 @@ func main () {
 	target := 6
 	fmt.Printf("Above below with array = %v, target = %d\n", array, target)
 	AboveBelow(array, target)
-	target = 3
+	target = 5
 	fmt.Printf("Above below with array = %v, target = %d\n", array, target)
 	AboveBelow(array, target)
 	
